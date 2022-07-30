@@ -4,16 +4,16 @@
     margin-bottom: 10px;
 }
 
-#inputsControls {
+#input-a {
     text-align: center;
 
 }
 
-#inputControlsB {
+#input-b {
     text-align: center;
 }
 
-#equalButt {
+#equal-butt {
     margin-top: 20px;
     margin-right: 40px;
     padding-left: 20px;
@@ -22,7 +22,7 @@
     padding-bottom: 5px;
 }
 
-#cButt {
+#c-butt {
     margin-top: 20px;
     margin-left: 40px;
     padding-left: 20px;
