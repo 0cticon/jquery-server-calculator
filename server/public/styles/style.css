@@ -4,29 +4,34 @@
     margin-bottom: 10px;
 }
 
-#input-a {
+#input-control-a {
     text-align: center;
-
 }
 
-#input-b {
+#input-control-b {
     text-align: center;
 }
 
 #equal-butt {
+    background-color: green;
+    color: white;
     margin-top: 20px;
     margin-right: 40px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 5px;
 }
 
 #c-butt {
+    background-color: black;
+    color: white;
     margin-top: 20px;
     margin-left: 40px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 5px;
 }
