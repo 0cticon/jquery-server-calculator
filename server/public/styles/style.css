@@ -35,3 +35,8 @@
     padding-bottom: 5px;
     border-radius: 5px;
 }
+
+#results {
+    text-align: center;
+    margin-top: 50px;
+}
