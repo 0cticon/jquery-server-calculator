@@ -59,7 +59,7 @@ function addCalculations() {
     }).then(function (response){
         console.log('added calculation:', response);
         getCalculations();
-        clearFields();
+        // clearFields();
     })
 }
 
@@ -68,11 +68,11 @@ function getCalculations(){
         type: 'GET',
         url: '/inputs',
     }).then(function (response) {
-        console.log(response);
+        // console.log(response);
         $('#results').empty();
         for (let i = 0; i < response.length; i++) {
             let calc = response[i];
-            $('#results').append(`
+            $('#results').prepend(`
             <div>${calc.inputA} ${calc.operator} ${calc.inputB} ${`=`} ${calc.output}</div>
             
             `);
