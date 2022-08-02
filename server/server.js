@@ -11,7 +11,7 @@ let operator;
 let inputB;
 let output;
 
-const calculationsList = [
+const calcList = [
     {
         inputA: 24,
         operator: '+',
@@ -20,20 +20,37 @@ const calculationsList = [
         
     }
 ];
+function doMath() {
+    if (calcList.operator === '+') {
+        calcList.output = calcList.inputA + calcList.inputB ;
+    }  
+    else if (calcList.operator === '-') {
+        calcList.output = calcList.inputA - calcList.inputB;
+    }
+    else if (calcList.operator === '*') {
+        calcList.output = calcList.inputA * calcList.inputB;
+    }
+    else if (calcList.operator === '/') {
+        calcList.output = calcList.inputA / calcList.inputB;
+    }
 
-// function doMath()
+}
+
 
 // GET calculation inputs 
 app.get('/inputs', (req, res) => {
-    res.send(calculationsList);
+    res.send(calcList);
+    
 });
 
 // Post new calculations to the DOM
 app.post('/inputs', (req, res) => {
     const calculation = req.body;
     console.log(req.body);
-    calculationsList.push(calculation);
-    res.send(calculationsList);
+    doMath();
+    calcList.push(calculation);
+    res.send(calcList);
+    
 })
 
 
