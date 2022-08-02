@@ -50,7 +50,7 @@ app.post('/inputs', (req, res) => {
     const output = req.body;
     console.log(req.body);
     if(output.operator === '+') {
-        output.output = output.inputA + output.inputB
+        output.output = Number(output.inputA) + Number(output.inputB)
     }
     else if(output.operator === '-') {
         output.output = output.inputA - output.inputB
